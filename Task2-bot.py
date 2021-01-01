@@ -8,7 +8,7 @@ from fmclient import Agent, Session
 from fmclient import Order, OrderSide, OrderType, Market
 
 # Submission details
-SUBMISSION = {"number": "994942", "name": "Anthony Wong"}
+SUBMISSION = {"number": "number", "name": "name"}
 
 
 class CAPMBot(Agent):
@@ -710,13 +710,11 @@ def to_dollar(cents):
 
 def to_cents(dollar):
     return dollar * 100
-            
-
 
 if __name__ == "__main__":
-    FM_ACCOUNT = "ardent-founder"
-    FM_EMAIL = "anthony.wong@student.unimelb.edu.au"
-    FM_PASSWORD = "994942"
+    FM_ACCOUNT = "account-name"
+    FM_EMAIL = "email"
+    FM_PASSWORD = "student-id"
     MARKETPLACE_ID = 1017
 
     bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID)
