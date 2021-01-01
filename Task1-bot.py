@@ -1,6 +1,3 @@
-"""
-This is a template for Project 1, Task 1 (Induced demand-supply)
-"""
 import copy, time
 
 from enum import Enum
@@ -8,7 +5,7 @@ from fmclient import Agent, OrderSide, Order, OrderType, Session, Market
 from typing import List
 
 # Student details
-SUBMISSION = {"number": "994942", "name": "Anthony Wong"}
+SUBMISSION = {"number": "student number", "name": "name"}
 
 # ------ Add a variable called PROFIT_MARGIN -----
 PROFIT_MARGIN = 20
@@ -407,9 +404,9 @@ class DSBot(Agent):
         return cancel_order
     
 if __name__ == "__main__":
-    FM_ACCOUNT = "ardent-founder"
-    FM_EMAIL = "anthony.wong@student.unimelb.edu.au"
-    FM_PASSWORD = "994942"
+    FM_ACCOUNT = "account-name"
+    FM_EMAIL = "email"
+    FM_PASSWORD = "student-id"
     MARKETPLACE_ID = 915
     BOT_TYPE = 0
 
